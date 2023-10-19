@@ -1,0 +1,104 @@
+/* navigations menu baggrund */
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container{
+    background: rgb(244, 142, 79);
+    width: 100%;
+    height: 30vh;
+    display: flex;
+    align-items: safe;
+    justify-content: left;
+}
+
+/* baggrund og skygge til navivagtion menu*/
+
+nav{
+    background: #eec691;
+    border-radius: 50px;
+    padding: 5px;
+    box-shadow: 0 25px 20px -20px rgba(0, 0, 0, 0.4);
+    width: 85%;
+    height: 70px;
+    margin: 10%;
+}
+
+/* align tekst */
+
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 9px 27px;
+    margin: 10px;
+    font-size: 18px;
+    font-weight: 500vh;
+    color: #17499e;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+}
+
+/* bokse til menu tekst*/
+
+nav ul li::after{
+    content: '';
+    background: #e07d0c;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+}
+
+/* farveskift bokse*/
+
+nav ul li:hover{
+    color: #fff;
+}
+
+nav ul li:hover::after{
+    top: 50%;
+    opacity: 1;
+}
+
+/* logo */
+
+.logo img{
+    position: absolute;
+    margin-top: -10px;
+    margin-left: 650px;
+    width: 280px;
+    height: auto;
+}
+
+
+.forside{
+    padding-left: 10vh;
+    padding-top: 0vh;
+    padding-bottom: 10vh;
+    padding-right: 10vh;
+    width: 100vh;
+   
+}
+
+
+
+
+
+
+
+ 
+
+
+
